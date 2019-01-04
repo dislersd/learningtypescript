@@ -18,8 +18,8 @@ console.log(sentace);
 let n: null = null;
 let u: undefined = undefined;
 
-let isNew: boolean = null;
-let myName: string = undefined;
+// let isNew: boolean = null;
+// let myName: string = undefined;
 
 let list1: number[] = [1,2,3];
 let list2: Array<number> = [1,2,3];
@@ -85,7 +85,7 @@ let p = {
 fullName(p);
 
 class Employee {
-  private employeeName: string;
+  protected employeeName: string;
 
   constructor(name: string) {
     this.employeeName = name;
@@ -111,7 +111,6 @@ class Manager extends Employee {
 let m1 = new Manager('Bruce');
 m1.delegateWork();
 m1.greet();
-console.log(m1.employeeName);
 
 
 
