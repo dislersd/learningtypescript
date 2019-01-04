@@ -85,7 +85,7 @@ let p = {
 fullName(p);
 
 class Employee {
-  employeeName: string;
+  private employeeName: string;
 
   constructor(name: string) {
     this.employeeName = name;
