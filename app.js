@@ -98,7 +98,7 @@ var Asteroid = /** @class */ (function () {
         this.rotation = 0;
         this.pointList = new Array();
         this.draw = function () {
-            _this.rotation += 0.02;
+            _this.rotation += 0.08;
             ctx.save();
             ctx.beginPath();
             ctx.strokeStyle = _this.color;

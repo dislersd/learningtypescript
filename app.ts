@@ -109,7 +109,7 @@ class Asteroid implements iShape {
   public pointList: Array<Vector> = new Array<Vector>();
 
   public draw = (): void => {
-    this.rotation += 0.02;
+    this.rotation += 0.08;
     ctx.save();
     ctx.beginPath();
     ctx.strokeStyle = this.color;
