@@ -78,7 +78,7 @@ calculatorElement.appendChild(clearButton);
 interfaceItems.forEach(function (item) {
     var b = createButton(item.text);
     if (item.value === '=') {
-        b.classList.add('equls');
+        b.classList.add('equals');
         b.addEventListener('click', function () {
             currentExpression = '' + eval(currentExpression);
             updateDisplay();

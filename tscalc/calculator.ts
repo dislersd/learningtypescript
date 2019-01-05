@@ -66,9 +66,9 @@ let interfaceItems = [
 ];
 
 let currentExpression: string = '';
-let calculatorElement = document.getElementById('calculator');
-let display = document.createElement('div');
-let clearButton = createButton('CE');
+let calculatorElement: any = document.getElementById('calculator');
+let display: HTMLDivElement = document.createElement('div');
+let clearButton: HTMLButtonElement = createButton('CE');
 
 clearButton.addEventListener('click', () => {
   currentExpression = '';
@@ -83,8 +83,8 @@ interfaceItems.forEach( item => {
   let b = createButton(item.text);
 
   if (item.value === '=') {
-    b.classList.add('equls');
-    b.addEventListener('click', function () {
+    b.classList.add('equals');
+    b.addEventListener('click', () => {
       currentExpression = '' + eval(currentExpression);
       updateDisplay();
     });
@@ -97,7 +97,7 @@ interfaceItems.forEach( item => {
       b.classList.add('operation'); 
     }
 
-    b.addEventListener('click', function () {
+    b.addEventListener('click', () => {
       if (currentExpression.length >= 9)
         return;
       currentExpression += '' + item.value;

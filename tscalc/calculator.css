@@ -28,5 +28,26 @@
   cursor: pointer;
   font: inherit;
 }
+#calculator .calculator-button:hover {
+  background-color: #aaaaaa;
+}
+#calculator .calculator-button.number {
+  background: #7ea;
+}
+#calculator .calculator-button.number:hover {
+  background: #1ce371;
+}
+#calculator .calculator-button.operation {
+  background: #f9b;
+}
+#calculator .calculator-button.operation:hover {
+  background: #ff3377;
+}
+#calculator .calculator-button.equals {
+  background: #88e;
+}
+#calculator .calculator-button.equals:hover {
+  background: #2f2fe1;
+}
 
 /*# sourceMappingURL=calculator.css.map */

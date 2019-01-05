@@ -33,5 +33,31 @@ $gray: #ddd;
     outline: 0;
     cursor: pointer;
     font: inherit;
+
+    &:hover {
+      background-color: darken($gray, 20%);
+    }
+
+    &.number {
+      background: $green;
+      &:hover {
+        background: darken($green, 20%)
+      }
+    }
+
+    &.operation {
+      background: $red;
+      &:hover {
+        background: darken($red, 20%);
+      }
+    }
+    
+    &.equals {
+      background: $blue;
+      &:hover {
+        background: darken($blue, 20%);
+      }
+    }
+
   }
 }
