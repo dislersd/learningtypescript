@@ -85,7 +85,12 @@ interfaceItems.forEach( item => {
   if (item.value === '=') {
     b.classList.add('equals');
     b.addEventListener('click', () => {
+    try {  
       currentExpression = '' + eval(currentExpression);
+    } catch (e) {
+        console.log('Error');
+        currentExpression = ''
+    }
       updateDisplay();
     });
   } else {

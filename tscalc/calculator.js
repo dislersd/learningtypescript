@@ -80,7 +80,13 @@ interfaceItems.forEach(function (item) {
     if (item.value === '=') {
         b.classList.add('equals');
         b.addEventListener('click', function () {
-            currentExpression = '' + eval(currentExpression);
+            try {
+                currentExpression = '' + eval(currentExpression);
+            }
+            catch (e) {
+                console.log('Error');
+                currentExpression = '';
+            }
             updateDisplay();
         });
     }
